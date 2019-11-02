@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="App.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="flex-set main-item">
+        <form>
+            <header>Конструктор визиток #1</header>
+            <div class='main-form'>
+                <div class='input-head'>Наименование организации<br></div>
+                <input type="text" class="companyName">
+                <br>
+                <br>
+
+
+                <div class='input-head'>Фамилия, имя, отчество<br></div>
+                <div class="flex-set">
+                    <div>
+                        <input type="text" class="personName">
+                    </div>
+                    <div class="flex-set">
+                        <div class="align-btn align-panel">
+                            <label class="menuBtn ori_1" onmouseup="changeOrient(this, 'personName-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.695 14.775">
+                                    <g transform="translate(0)">
+                                        <path
+                                            d="M789.695,454.739V456.1a.8.8,0,0,1-.678.678H771.678A.8.8,0,0,1,771,456.1v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.456.456,0,0,1,789.695,454.739Zm-4-4V452.1a.8.8,0,0,1-.678.678H771.678A.8.8,0,0,1,771,452.1v-1.357a.8.8,0,0,1,.678-.678h13.342a.652.652,0,0,1,.452.226A.537.537,0,0,1,785.7,450.744Zm2.714-4v1.357a.8.8,0,0,1-.678.678H771.678a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h16.056a.651.651,0,0,1,.452.226A.456.456,0,0,1,788.413,446.749Zm-4.071-4.071v1.357a.8.8,0,0,1-.678.678H771.678a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h11.986a.651.651,0,0,1,.452.226A.451.451,0,0,1,784.342,442.678Z"
+                                            transform="translate(-771 -442)" />
+                                    </g>
+                                </svg> </label>
+                            <label class="menuBtn ori_2" onmouseup="changeOrient(this, 'personName-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.694 14.775">
+                                    <path
+                                        d="M892.295,454.739V456.1a.8.8,0,0,1-.678.678H874.279a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.456.456,0,0,1,892.295,454.739Zm-4-4V452.1a.8.8,0,0,1-.678.678h-9.347a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h9.347a.651.651,0,0,1,.452.226A.456.456,0,0,1,888.3,450.744Zm2.638-4v1.357a.8.8,0,0,1-.678.678h-14.7a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h14.7a.652.652,0,0,1,.452.226C890.938,446.372,890.938,446.523,890.938,446.749Zm-4-4.071v1.357a.8.8,0,0,1-.678.678h-6.709a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h6.709a.8.8,0,0,1,.678.678Z"
+                                        transform="translate(-873.6 -442)" />
+                                </svg> </label>
+                            <label class="menuBtn ori_3" onmouseup="changeOrient(this, 'personName-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.694 14.775">
+                                    <g transform="translate(0)">
+                                        <path
+                                            d="M738.395,454.739V456.1a.8.8,0,0,1-.678.678H720.378a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,454.739Zm0-4V452.1a.8.8,0,0,1-.678.678H724.374a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h13.343a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,450.744Zm0-4v1.357a.8.8,0,0,1-.678.678H721.66a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h16.056a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,446.749Zm0-4.071v1.357a.8.8,0,0,1-.678.678H725.73a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h11.986a.8.8,0,0,1,.678.678Z"
+                                            transform="translate(-719.7 -442)" />
+                                    </g>
+                                </svg> </label>
+                        </div>
+                        <div class='align-btn size-panel'>
+                            <input type="button" class="menuBtn size_1" value="24px"
+                                onclick="changeSize(this, 'personName-card')">
+                            <input type="button" class="menuBtn size_2" value="26px"
+                                onclick="changeSize(this, 'personName-card')">
+                            <input type="button" class="menuBtn size_3" value="28px"
+                                onclick="changeSize(this, 'personName-card')">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-panel">
+
+                    <div class='color-item blackColor' onclick="changeColor(1, this)"></div>
+                    <div class='color-item blueColor' onclick="changeColor(1, this)"></div>
+                    <div class='color-item redColor' onclick="changeColor(1, this)"></div>
+                    <div class='color-item greenColor' onclick="changeColor(1, this)"></div>
+                    <div class='color-item yellowColor' onclick="changeColor(1, this)"></div>
+                    <div class='color-item pinkColor' onclick="changeColor(1, this)"></div>
+
+                </div>
+                <br>
+
+
+                <div class='input-head'>Должность<br></div>
+                <div class="flex-set">
+                    <div>
+                        <input type="text" class="occupation">
+                    </div>
+                    <div class="flex-set">
+                        <div class="align-btn align-panel">
+                            <label class="menuBtn ori_4" onmouseup="changeOrient(this, 'occupation-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.695 14.775">
+                                    <g transform="translate(0)">
+                                        <path
+                                            d="M789.695,454.739V456.1a.8.8,0,0,1-.678.678H771.678A.8.8,0,0,1,771,456.1v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.456.456,0,0,1,789.695,454.739Zm-4-4V452.1a.8.8,0,0,1-.678.678H771.678A.8.8,0,0,1,771,452.1v-1.357a.8.8,0,0,1,.678-.678h13.342a.652.652,0,0,1,.452.226A.537.537,0,0,1,785.7,450.744Zm2.714-4v1.357a.8.8,0,0,1-.678.678H771.678a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h16.056a.651.651,0,0,1,.452.226A.456.456,0,0,1,788.413,446.749Zm-4.071-4.071v1.357a.8.8,0,0,1-.678.678H771.678a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h11.986a.651.651,0,0,1,.452.226A.451.451,0,0,1,784.342,442.678Z"
+                                            transform="translate(-771 -442)" />
+                                    </g>
+                                </svg></label>
+                            <label class="menuBtn ori_5" onmouseup="changeOrient(this, 'occupation-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.694 14.775">
+                                    <path
+                                        d="M892.295,454.739V456.1a.8.8,0,0,1-.678.678H874.279a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.456.456,0,0,1,892.295,454.739Zm-4-4V452.1a.8.8,0,0,1-.678.678h-9.347a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h9.347a.651.651,0,0,1,.452.226A.456.456,0,0,1,888.3,450.744Zm2.638-4v1.357a.8.8,0,0,1-.678.678h-14.7a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h14.7a.652.652,0,0,1,.452.226C890.938,446.372,890.938,446.523,890.938,446.749Zm-4-4.071v1.357a.8.8,0,0,1-.678.678h-6.709a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h6.709a.8.8,0,0,1,.678.678Z"
+                                        transform="translate(-873.6 -442)" />
+                                </svg></label>
+                            <label class="menuBtn ori_6" onmouseup="changeOrient(this, 'occupation-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.694 14.775">
+                                    <g transform="translate(0)">
+                                        <path
+                                            d="M738.395,454.739V456.1a.8.8,0,0,1-.678.678H720.378a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,454.739Zm0-4V452.1a.8.8,0,0,1-.678.678H724.374a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h13.343a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,450.744Zm0-4v1.357a.8.8,0,0,1-.678.678H721.66a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h16.056a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,446.749Zm0-4.071v1.357a.8.8,0,0,1-.678.678H725.73a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h11.986a.8.8,0,0,1,.678.678Z"
+                                            transform="translate(-719.7 -442)" />
+                                    </g>
+                                </svg></label>
+                        </div>
+                        <div class="align-btn size-panel">
+                            <input type="button" class="menuBtn size_4" value="14px"
+                                onclick="changeSize(this, 'occupation-card')">
+                            <input type="button" class="menuBtn size_5" value="16px"
+                                onclick="changeSize(this, 'occupation-card')">
+                            <input type="button" class="menuBtn size_6" value="18px"
+                                onclick="changeSize(this, 'occupation-card')">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="color-panel">
+                    <div class='color-item grey1Color' onclick="changeColor(0, this)"></div>
+                    <div class='color-item grey2Color' onclick="changeColor(0, this)"></div>
+                    <div class='color-item grey3Color' onclick="changeColor(0, this)"></div>
+                    <div class='color-item grey4Color' onclick="changeColor(0, this)"></div>
+                    <div class='color-item grey5Color' onclick="changeColor(0, this)"></div>
+                    <div class='color-item grey6Color' onclick="changeColor(0, this)"></div>
+
+                </div>
+                <br>
+
+
+                <div class='input-head'> Телефон</div>
+                <div class='phoneContainer'>
+                    <input type="text" class="firstNumber">
+                    <div class="Phone">
+                        <div style="height: 10px"></div>
+                        <!--исправить костыль-->
+                        <div class="flex-set align-center">
+                            <input type="text" class="secondNumber">
+                            <label class="minusBtn" onmouseup="removePhone(this, '.Phone')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17.107" height="17.107"
+                                    viewBox="0 0 17.107 17.107">
+                                    <path class="a"
+                                        d="M787.216,1356.936v-1.446a.852.852,0,0,0-.723-.723h-9.959a.852.852,0,0,0-.723.723v1.446a.852.852,0,0,0,.723.723h9.959a.694.694,0,0,0,.482-.241A.486.486,0,0,0,787.216,1356.936Zm2.891-6.024v10.682a3.294,3.294,0,0,1-3.213,3.213H776.213a3.294,3.294,0,0,1-3.213-3.213v-10.682a3.294,3.294,0,0,1,3.213-3.213h10.682a3.039,3.039,0,0,1,2.249.964A2.917,2.917,0,0,1,790.107,1350.913Z"
+                                        transform="translate(-773 -1347.7)" />
+                                </svg>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <label class="flex-set plusBtn" onmouseup="addPhone(this, '.Phone')"><br>
+                        <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="17.107" height="17.107"
+                            viewBox="0 0 17.107 17.107">
+                            <path class="a"
+                                d="M376.1,1417.336v-1.446a.852.852,0,0,0-.723-.723H371.84v-3.534a.852.852,0,0,0-.723-.723h-1.446a.852.852,0,0,0-.723.723v3.534h-3.534a.852.852,0,0,0-.723.723v1.446a.852.852,0,0,0,.723.723h3.534v3.534a.852.852,0,0,0,.723.723h1.446a.852.852,0,0,0,.723-.723v-3.534h3.534a.694.694,0,0,0,.482-.241A.572.572,0,0,0,376.1,1417.336Zm2.811-6.024v10.682a3.294,3.294,0,0,1-3.213,3.213H365.013a3.294,3.294,0,0,1-3.213-3.213v-10.682a3.294,3.294,0,0,1,3.213-3.213h10.682a3.294,3.294,0,0,1,3.213,3.213Z"
+                                transform="translate(-361.8 -1408.1)" />
+                        </svg>
+                        <span>Добавить еще один телефон</span>
+                    </label>
+                </div>
+                <br>
+
+
+                <div class='input-head'>E-mail</div>
+                <div class="flex-set align-center">
+                    <input type="text" class="email">
+
+                    <label class="flex-set box">
+                        <input type="checkbox" checked="checked" class="email-chbox">
+                        <span class="checkmark"></span>
+                        <span>Отображать</span>
+                    </label>
+                </div>
+                <br>
+
+                <div class='input-head'>Адрес</div>
+                <div class="flex-set align-center">
+                    <input type="text" class="adress">
+                    <label class="flex-set box">
+                        <input type="checkbox" checked="checked" class="adress-chbox">
+                        <span class="checkmark"></span>
+                        <span>Отображать</span>
+                    </label>
+                </div>
+                <br>
+
+                <input type="button" value="Применить" onclick="getCard(this)">
+
+            </div>
+        </form>
+
+
+        <div class="card">
+            <div class="companyName-card"></div>
+            <div class="personName-card"></div>
+            <div class="occupation-card"></div>
+            <div class="phone-card"></div>
+            <div class="email-card parameters"></div>
+            <div class="adress-card parameters"></div>
+        </div>
+
+    </div>
+    
+    <div class="flex-set main-item">
+        <form>
+            <header>Конструктор визиток #2</header>
+            <div class='main-form'>
+                <div class='input-head'>Наименование организации<br></div>
+                <input type="text" class="companyName">
+                <br>
+                <br>
+
+
+                <div class='input-head'>Фамилия, имя, отчество<br></div>
+                <div class="flex-set">
+                    <div>
+                        <input type="text" class="personName">
+                    </div>
+                    <div class="flex-set">
+                        <div class="align-btn align-panel">
+                            <label class="menuBtn ori_1" onmouseup="changeOrient(this, 'personName-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.695 14.775">
+                                    <g transform="translate(0)">
+                                        <path
+                                            d="M789.695,454.739V456.1a.8.8,0,0,1-.678.678H771.678A.8.8,0,0,1,771,456.1v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.456.456,0,0,1,789.695,454.739Zm-4-4V452.1a.8.8,0,0,1-.678.678H771.678A.8.8,0,0,1,771,452.1v-1.357a.8.8,0,0,1,.678-.678h13.342a.652.652,0,0,1,.452.226A.537.537,0,0,1,785.7,450.744Zm2.714-4v1.357a.8.8,0,0,1-.678.678H771.678a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h16.056a.651.651,0,0,1,.452.226A.456.456,0,0,1,788.413,446.749Zm-4.071-4.071v1.357a.8.8,0,0,1-.678.678H771.678a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h11.986a.651.651,0,0,1,.452.226A.451.451,0,0,1,784.342,442.678Z"
+                                            transform="translate(-771 -442)" />
+                                    </g>
+                                </svg> </label>
+                            <label class="menuBtn ori_2" onmouseup="changeOrient(this, 'personName-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.694 14.775">
+                                    <path
+                                        d="M892.295,454.739V456.1a.8.8,0,0,1-.678.678H874.279a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.456.456,0,0,1,892.295,454.739Zm-4-4V452.1a.8.8,0,0,1-.678.678h-9.347a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h9.347a.651.651,0,0,1,.452.226A.456.456,0,0,1,888.3,450.744Zm2.638-4v1.357a.8.8,0,0,1-.678.678h-14.7a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h14.7a.652.652,0,0,1,.452.226C890.938,446.372,890.938,446.523,890.938,446.749Zm-4-4.071v1.357a.8.8,0,0,1-.678.678h-6.709a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h6.709a.8.8,0,0,1,.678.678Z"
+                                        transform="translate(-873.6 -442)" />
+                                </svg> </label>
+                            <label class="menuBtn ori_3" onmouseup="changeOrient(this, 'personName-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.694 14.775">
+                                    <g transform="translate(0)">
+                                        <path
+                                            d="M738.395,454.739V456.1a.8.8,0,0,1-.678.678H720.378a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,454.739Zm0-4V452.1a.8.8,0,0,1-.678.678H724.374a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h13.343a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,450.744Zm0-4v1.357a.8.8,0,0,1-.678.678H721.66a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h16.056a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,446.749Zm0-4.071v1.357a.8.8,0,0,1-.678.678H725.73a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h11.986a.8.8,0,0,1,.678.678Z"
+                                            transform="translate(-719.7 -442)" />
+                                    </g>
+                                </svg> </label>
+                        </div>
+                        <div class='align-btn size-panel'>
+                            <input type="button" class="menuBtn size_1" value="24px"
+                                onclick="changeSize(this, 'personName-card')">
+                            <input type="button" class="menuBtn size_2" value="26px"
+                                onclick="changeSize(this, 'personName-card')">
+                            <input type="button" class="menuBtn size_3" value="28px"
+                                onclick="changeSize(this, 'personName-card')">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-panel">
+
+                    <div class='color-item blackColor' onclick="changeColor(1, this)"></div>
+                    <div class='color-item blueColor' onclick="changeColor(1, this)"></div>
+                    <div class='color-item redColor' onclick="changeColor(1, this)"></div>
+                    <div class='color-item greenColor' onclick="changeColor(1, this)"></div>
+                    <div class='color-item yellowColor' onclick="changeColor(1, this)"></div>
+                    <div class='color-item pinkColor' onclick="changeColor(1, this)"></div>
+
+                </div>
+                <br>
+
+
+                <div class='input-head'>Должность<br></div>
+                <div class="flex-set">
+                    <div>
+                        <input type="text" class="occupation">
+                    </div>
+                    <div class="flex-set">
+                        <div class="align-btn align-panel">
+                            <label class="menuBtn ori_4" onmouseup="changeOrient(this, 'occupation-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.695 14.775">
+                                    <g transform="translate(0)">
+                                        <path
+                                            d="M789.695,454.739V456.1a.8.8,0,0,1-.678.678H771.678A.8.8,0,0,1,771,456.1v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.456.456,0,0,1,789.695,454.739Zm-4-4V452.1a.8.8,0,0,1-.678.678H771.678A.8.8,0,0,1,771,452.1v-1.357a.8.8,0,0,1,.678-.678h13.342a.652.652,0,0,1,.452.226A.537.537,0,0,1,785.7,450.744Zm2.714-4v1.357a.8.8,0,0,1-.678.678H771.678a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h16.056a.651.651,0,0,1,.452.226A.456.456,0,0,1,788.413,446.749Zm-4.071-4.071v1.357a.8.8,0,0,1-.678.678H771.678a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h11.986a.651.651,0,0,1,.452.226A.451.451,0,0,1,784.342,442.678Z"
+                                            transform="translate(-771 -442)" />
+                                    </g>
+                                </svg></label>
+                            <label class="menuBtn ori_5" onmouseup="changeOrient(this, 'occupation-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.694 14.775">
+                                    <path
+                                        d="M892.295,454.739V456.1a.8.8,0,0,1-.678.678H874.279a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.456.456,0,0,1,892.295,454.739Zm-4-4V452.1a.8.8,0,0,1-.678.678h-9.347a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h9.347a.651.651,0,0,1,.452.226A.456.456,0,0,1,888.3,450.744Zm2.638-4v1.357a.8.8,0,0,1-.678.678h-14.7a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h14.7a.652.652,0,0,1,.452.226C890.938,446.372,890.938,446.523,890.938,446.749Zm-4-4.071v1.357a.8.8,0,0,1-.678.678h-6.709a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h6.709a.8.8,0,0,1,.678.678Z"
+                                        transform="translate(-873.6 -442)" />
+                                </svg></label>
+                            <label class="menuBtn ori_6" onmouseup="changeOrient(this, 'occupation-card')"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="19" height="15"
+                                    viewBox="0 0 18.694 14.775">
+                                    <g transform="translate(0)">
+                                        <path
+                                            d="M738.395,454.739V456.1a.8.8,0,0,1-.678.678H720.378a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h17.338a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,454.739Zm0-4V452.1a.8.8,0,0,1-.678.678H724.374a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h13.343a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,450.744Zm0-4v1.357a.8.8,0,0,1-.678.678H721.66a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h16.056a.652.652,0,0,1,.452.226A.538.538,0,0,1,738.395,446.749Zm0-4.071v1.357a.8.8,0,0,1-.678.678H725.73a.8.8,0,0,1-.678-.678v-1.357a.8.8,0,0,1,.678-.678h11.986a.8.8,0,0,1,.678.678Z"
+                                            transform="translate(-719.7 -442)" />
+                                    </g>
+                                </svg></label>
+                        </div>
+                        <div class="align-btn size-panel">
+                            <input type="button" class="menuBtn size_4" value="14px"
+                                onclick="changeSize(this, 'occupation-card')">
+                            <input type="button" class="menuBtn size_5" value="16px"
+                                onclick="changeSize(this, 'occupation-card')">
+                            <input type="button" class="menuBtn size_6" value="18px"
+                                onclick="changeSize(this, 'occupation-card')">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="color-panel">
+                    <div class='color-item grey1Color' onclick="changeColor(0, this)"></div>
+                    <div class='color-item grey2Color' onclick="changeColor(0, this)"></div>
+                    <div class='color-item grey3Color' onclick="changeColor(0, this)"></div>
+                    <div class='color-item grey4Color' onclick="changeColor(0, this)"></div>
+                    <div class='color-item grey5Color' onclick="changeColor(0, this)"></div>
+                    <div class='color-item grey6Color' onclick="changeColor(0, this)"></div>
+
+                </div>
+                <br>
+
+
+                <div class='input-head'> Телефон</div>
+                <div class='phoneContainer'>
+                    <input type="text" class="firstNumber">
+                    <div class="Phone">
+                        <div style="height: 10px"></div>
+                        <!--исправить костыль-->
+                        <div class="flex-set align-center">
+                            <input type="text" class="secondNumber">
+                            <label class="minusBtn" onmouseup="removePhone(this, '.Phone')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17.107" height="17.107"
+                                    viewBox="0 0 17.107 17.107">
+                                    <path class="a"
+                                        d="M787.216,1356.936v-1.446a.852.852,0,0,0-.723-.723h-9.959a.852.852,0,0,0-.723.723v1.446a.852.852,0,0,0,.723.723h9.959a.694.694,0,0,0,.482-.241A.486.486,0,0,0,787.216,1356.936Zm2.891-6.024v10.682a3.294,3.294,0,0,1-3.213,3.213H776.213a3.294,3.294,0,0,1-3.213-3.213v-10.682a3.294,3.294,0,0,1,3.213-3.213h10.682a3.039,3.039,0,0,1,2.249.964A2.917,2.917,0,0,1,790.107,1350.913Z"
+                                        transform="translate(-773 -1347.7)" />
+                                </svg>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <label class="flex-set plusBtn" onmouseup="addPhone(this, '.Phone')"><br>
+                        <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="17.107" height="17.107"
+                            viewBox="0 0 17.107 17.107">
+                            <path class="a"
+                                d="M376.1,1417.336v-1.446a.852.852,0,0,0-.723-.723H371.84v-3.534a.852.852,0,0,0-.723-.723h-1.446a.852.852,0,0,0-.723.723v3.534h-3.534a.852.852,0,0,0-.723.723v1.446a.852.852,0,0,0,.723.723h3.534v3.534a.852.852,0,0,0,.723.723h1.446a.852.852,0,0,0,.723-.723v-3.534h3.534a.694.694,0,0,0,.482-.241A.572.572,0,0,0,376.1,1417.336Zm2.811-6.024v10.682a3.294,3.294,0,0,1-3.213,3.213H365.013a3.294,3.294,0,0,1-3.213-3.213v-10.682a3.294,3.294,0,0,1,3.213-3.213h10.682a3.294,3.294,0,0,1,3.213,3.213Z"
+                                transform="translate(-361.8 -1408.1)" />
+                        </svg>
+                        <span>Добавить еще один телефон</span>
+                    </label>
+                </div>
+                <br>
+
+
+                <div class='input-head'>E-mail</div>
+                <div class="flex-set align-center">
+                    <input type="text" class="email">
+
+                    <label class="flex-set box">
+                        <input type="checkbox" checked="checked" class="email-chbox">
+                        <span class="checkmark"></span>
+                        <span>Отображать</span>
+                    </label>
+                </div>
+                <br>
+
+                <div class='input-head'>Адрес</div>
+                <div class="flex-set align-center">
+                    <input type="text" class="adress">
+                    <label class="flex-set box">
+                        <input type="checkbox" checked="checked" class="adress-chbox">
+                        <span class="checkmark"></span>
+                        <span>Отображать</span>
+                    </label>
+                </div>
+                <br>
+
+                <input type="button" value="Применить" onclick="getCard(this)">
+
+            </div>
+        </form>
+
+
+        <div class="card">
+            <div class="companyName-card"></div>
+            <div class="personName-card"></div>
+            <div class="occupation-card"></div>
+            <div class="phone-card"></div>
+            <div class="email-card parameters"></div>
+            <div class="adress-card parameters"></div>
+        </div>
+
+    </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+
+</html>

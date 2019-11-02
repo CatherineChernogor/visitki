@@ -1,0 +1,278 @@
+/*шаблоны*******************************************************************/
+body {
+  margin-left: 15vw;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+
+  background: transparent url("src/Image.png") 0% 0% padding-box;
+}
+.flex-set {
+  display: flex;
+  flex-direction: row;
+}
+.align-center{
+  align-items: center;
+}
+
+/*главные стили************************************************************/
+form {
+  padding: 30px 15px 0px 15px;
+  height: 100vh;
+
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #00000029;
+
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+}
+header {
+  text-align: left;
+  margin-bottom: 30px;
+
+  font: Bold 20px/24px Roboto;
+  color: #707070;
+}
+input[type="text"] {
+  height: 17px;
+  width: 255px;
+  padding: 4px 0px 4px 5px;
+
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #aaaaaabf;
+  border-radius: 2px;
+}
+
+input[value="Применить"] {/***********сделать нормальную кнопку*************************/
+  height: 32px;
+  width: 126px;/*************посмотреть кнопку сделать ее через паддинги*/
+
+  border-radius: 32px;
+  border: 0px solid #3f88e8;
+
+  background: #3f88e8 no-repeat padding-box;
+  color: #ffffff;
+
+  cursor: pointer;
+
+}
+.input-head{
+    margin-bottom: 5px;
+}
+
+/*кнопки цвета**************************************************************/
+.color-panel{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+
+}
+.color-item{
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+  
+  background: 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+}
+
+.blackColor{
+  background-color: #202020;
+  border-color: #202020;
+}
+.blueColor{
+  background-color: #3F88E8;
+  border-color: #3F88E8;
+}
+.redColor{
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+.greenColor{
+  background-color: #097A14 ;
+  border-color: #097A14;
+}
+.yellowColor{
+  background-color: #DCA40A;
+  border-color: #DCA40A;
+}
+.pinkColor{
+  background-color: #DC0AD5;
+  border-color: #DC0AD5;
+}
+
+.grey2Color{
+  background-color: #474747 ;
+  border-color: #474747;
+}
+.grey1Color{
+  background-color: #202020;
+  border-color: #202020;
+}
+.grey3Color{
+  background-color: #636363;
+  border-color: #636363;
+}
+.grey4Color{
+  background-color: #9E9E9E;
+  border-color: #9E9E9E;
+}
+.grey5Color{
+  background-color: #BBBBBB;
+  border-color: #BBBBBB;
+}
+.grey6Color{
+  background-color: #E3E3E3;
+  border-color: #E3E3E3;
+}
+
+/*боковые кнопки*************************************************************/
+.align-btn {
+
+  width: 106px;
+  height: 24px;
+  margin-left: 15px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  background: no-repeat padding-box;
+  border: 1px solid #aaaaaabf;
+  border-radius: 2px;
+
+}
+.menuBtn {
+  width: 34px;
+  height: 24px;
+  margin: 0px;
+  padding: 0px;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+
+  background: no-repeat padding-box;
+  border: 1px solid #aaaaaabf;
+  border-radius: 2px;
+  border: 0px;
+}
+svg {
+  display: flex;
+  align-self: center;
+}
+
+/*добавление телефона*********************************************************/
+.Phone {
+  display: none;
+}
+.secondNumber {
+  width: 222px;
+}
+.plus{
+  margin-right: 5px;
+}
+.plusBtn{
+  margin-top: 15px;
+  cursor: pointer;
+}
+.minusBtn{
+  margin-left: 10px;
+  cursor: pointer;
+}
+.a {   /*for svg buttons*/
+  fill: #707070;
+}
+
+/*чекбоксы*********************************************************************/
+.box {
+    position: relative;
+    cursor: pointer;
+
+    font-size: 14px;
+    margin-left: 15px; 
+  }
+.box input {/* hide default checkbox */
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  } 
+.checkmark {/* create a custom checkbox */
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+
+    background-color: #707070;
+    border: 1px solid  #707070;
+    border-radius: 2px;
+  }
+.checkmark:after {/*create the checkmark/indicator (hidden when not checked) */
+    content: "";
+    position: absolute;
+    display: none;
+  } 
+.box input:checked ~ .checkmark:after {/* Show the checkmark when checked */
+    display: block;
+  } 
+.box .checkmark:after {/* Style the checkmark/indicator */
+    left: 5px;
+    width: 5px;
+    height: 10px;
+
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+/*визитка************************************************************************/
+.card {
+  width: 425px;
+  height: 268px;
+  margin-top: 80px;
+  margin-left: 65px;
+  padding: 0px 10px;
+
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 12px #00000029;
+  border: 1px solid #707070a8;
+  border-radius: 6px;
+}
+.companyName-card {
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+  margin-top: 20px;
+
+  font: Regular 10px/13px Roboto;
+  color: #202020;
+}
+.personName-card {
+  justify-content: center;
+  text-align: center;
+  margin-top: 32px;
+
+  font: Bold 26px/32px Roboto;
+  color: #202020;
+}
+.occupation-card {
+  justify-content: center;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 20px;
+
+  font: Regular 14px/17px Roboto;
+  color: #202020bf;
+}
+.parameters {
+  justify-content: right;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 222px;
+
+  font: Regular 12px/14px Roboto;
+  color: #202020;
+}
